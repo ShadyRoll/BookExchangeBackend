@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>BookExchange</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <description>HSE term work, second year</description>
+  <groupId>ru.hse</groupId>
+  <modelVersion>4.0.0</modelVersion>
+  <name>BookExchange</name>
+
+  <properties>
+    <java.version>11</java.version>
+  </properties>
+
+  <parent>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <groupId>org.springframework.boot</groupId>
+    <relativePath/>
+    <version>2.3.7.RELEASE</version> <!-- lookup parent from repository -->
+  </parent>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <groupId>org.springframework.boot</groupId>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-site-plugin</artifactId>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>3.7.1</version>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <scope>compile</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.28</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <scope>compile</scope>
+    </dependency>
+
+    <dependency>
+      <artifactId>postgresql</artifactId>
+      <groupId>org.postgresql</groupId>
+      <!--      <scope>runtime</scope>-->
+    </dependency>
+
+    <dependency>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <artifactId>hibernate-core</artifactId>
+      <groupId>org.hibernate</groupId>
+      <scope>compile</scope>
+      <version>5.4.0.Final</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>springdoc-openapi-ui</artifactId>
+      <groupId>org.springdoc</groupId>
+      <scope>compile</scope>
+      <version>1.5.2</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>spring-boot-starter-security</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <artifactId>jaxb-api</artifactId>
+      <groupId>javax.xml.bind</groupId>
+      <scope>compile</scope>
+      <version>2.3.0</version>
+    </dependency>
+    <dependency>
+      <artifactId>java-jwt</artifactId>
+      <groupId>com.auth0</groupId>
+      <scope>compile</scope>
+      <version>3.4.0</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>maven-project-info-reports-plugin</artifactId>
+      <groupId>org.apache.maven.plugins</groupId>
+      <version>3.1.2</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>javax.annotation-api</artifactId>
+      <groupId>javax.annotation</groupId>
+      <version>1.3.2</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <groupId>org.apache.maven.plugins</groupId>
+      <version>3.8.1</version>
+    </dependency>
+  </dependencies>
+
+
+  <reporting>
+    <plugins>
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>3.2.0</version>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>3.0.0</version>
+      </plugin>
+    </plugins>
+  </reporting>
+
+
+</project>
